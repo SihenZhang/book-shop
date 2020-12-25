@@ -59,7 +59,7 @@ public class CartServlet extends BaseServlet {
         Dict result = Dict.create();
         if (cart != null) {
             cart.updateCount(id, count);
-            result.set("id", id).set("count", cart.getItems().get(id).getCount()).set("totalCount", cart.getTotalCount()).set("totalPrice", cart.getTotalPrice());
+            result.set("id", id).set("count", cart.getItems().get(id).getCount()).set("price", cart.getItems().get(id).getTotalPrice()).set("totalCount", cart.getTotalCount()).set("totalPrice", cart.getTotalPrice());
             String jsonStr = JSONUtil.toJsonStr(result);
             resp.getWriter().write(jsonStr);
         } else {

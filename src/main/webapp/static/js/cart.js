@@ -20,6 +20,7 @@ $inputCount.each(function () {
 
 changeCount = function ($elem, id, count) {
     const $sub = $elem.prev().children('.btn-sub')
+    const $price = $elem.parent().next()
     $.getJSON(location.origin + '/book-shop/cartServlet', { action: 'ajaxUpdateCount', id: id, count: count })
         .done(function (data) {
             $elem.val(data.count)
@@ -28,6 +29,7 @@ changeCount = function ($elem, id, count) {
             } else {
                 $sub.removeAttr('disabled')
             }
+            $price.text('￥' + data.price.toFixed(2))
             $cartTotalCount.text(data.totalCount)
             $totalCount.text(data.totalCount)
             $totalPrice.text(data.totalPrice.toFixed(2))
