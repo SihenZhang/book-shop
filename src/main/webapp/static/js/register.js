@@ -81,6 +81,8 @@ const captchaValidator = new Validator($captcha, [
         errorMsg: '验证码应由字母或数字组成'
     }
 ])
+const $registerForm = $('#registerForm')
+const $registerBtn = $('#registerBtn')
 
 usernameValidation = function () {
     let validation = $username.validation(usernameValidator)
@@ -124,10 +126,15 @@ $('#captchaImg').click(function () {
     this.src = 'captchaServlet?action=get&d=' + new Date().getTime()
 })
 
-$('#registerForm').submit(function () {
-    const validation = !!(usernameValidation() & emailValidation() & passwordValidation() & confirmPasswordValidation() & captchaValidation())
-    if (validation) {
-        $(this).find('#registerBtn').attr('disabled', 'disabled')
+$registerForm.submit(function () {
+    if ($registerBtn.hasClass('disabled')) {
+        return false
     }
-    return validation
+    const validation = !!(usernameValidation() & emailValidation() & passwordValidation() & confirmPasswordValidation() & captchaValidation())
+    if (!validation) {
+        return false
+    }
+    $registerBtn.addClass('disabled')
+    $registerBtn.val('正在注册...')
+    return true
 })

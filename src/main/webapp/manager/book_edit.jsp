@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="static/css/manager.css">
 </head>
 <body class="d-flex flex-column h-100">
-    <c:set var="title" value="编辑图书" />
+    <c:choose>
+        <c:when test="${empty requestScope.book}">
+            <c:set var="title" value="添加图书" />
+        </c:when>
+        <c:otherwise>
+            <c:set var="title" value="编辑图书" />
+        </c:otherwise>
+    </c:choose>
     <%@ include file="../common/shortcut.jsp" %>
     <%@ include file="../common/header_with_manager_nav.jsp" %>
     <main class="container-fluid bg-light">
@@ -49,14 +56,14 @@
                             <div class="form-group row mb-4">
                                 <label for="inputSales" class="col-2 col-form-label">销量</label>
                                 <div class="col-10">
-                                    <input type="number" id="inputSales" name="sales" class="form-control" placeholder="请输入图书销量" value="${requestScope.book.sales}" autocomplete="off">
+                                    <input type="number" id="inputSales" name="sales" class="form-control" placeholder="请输入图书销量" min="0" value="${requestScope.book.sales}" autocomplete="off">
                                     <div class="invalid-feedback position-absolute"></div>
                                 </div>
                             </div>
                             <div class="form-group row mb-4">
                                 <label for="inputStock" class="col-2 col-form-label">库存</label>
                                 <div class="col-10">
-                                    <input type="number" id="inputStock" name="stock" class="form-control" placeholder="请输入图书库存" value="${requestScope.book.stock}" autocomplete="off">
+                                    <input type="number" id="inputStock" name="stock" class="form-control" placeholder="请输入图书库存" min="0" value="${requestScope.book.stock}" autocomplete="off">
                                     <div class="invalid-feedback position-absolute"></div>
                                 </div>
                             </div>
@@ -68,5 +75,6 @@
         </div>
     </main>
     <%@ include file="../common/footer.jsp" %>
+    <script src="static/js/book_edit.js"></script>
 </body>
 </html>

@@ -124,19 +124,20 @@ jQuery.fn.extend({
      */
     validation: function (validator, noValid) {
         const errorMsg = validator.validate()
+        const $elem = this.parent().hasClass('input-group') ? this.add(this.parent()) : this
         if (errorMsg) {
-            this.addClass('is-invalid')
+            $elem.addClass('is-invalid')
             if (!noValid) {
-                this.removeClass('is-valid')
+                $elem.removeClass('is-valid')
             }
-            this.siblings('.invalid-feedback').text(errorMsg)
+            $elem.siblings('.invalid-feedback').text(errorMsg)
             return false
         } else {
-            this.removeClass('is-invalid')
+            $elem.removeClass('is-invalid')
             if (!noValid) {
-                this.addClass('is-valid')
+                $elem.addClass('is-valid')
             }
-            this.siblings('.invalid-feedback').text('')
+            $elem.siblings('.invalid-feedback').text('')
             return true
         }
     }
