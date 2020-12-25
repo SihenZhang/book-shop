@@ -20,7 +20,7 @@ $inputCount.each(function () {
 
 changeCount = function ($elem, id, count) {
     const $sub = $elem.prev().children('.btn-sub')
-    $.getJSON(location.origin + '/bookshop/cartServlet', { action: 'ajaxUpdateCount', id: id, count: count })
+    $.getJSON(location.origin + '/book-shop/cartServlet', { action: 'ajaxUpdateCount', id: id, count: count })
         .done(function (data) {
             $elem.val(data.count)
             if (data.count <= 1) {

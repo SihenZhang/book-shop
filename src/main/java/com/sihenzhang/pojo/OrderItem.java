@@ -19,4 +19,16 @@ public class OrderItem {
     public BigDecimal getTotalPrice() {
         return this.price.multiply(BigDecimal.valueOf(count));
     }
+
+    @Override
+    public String toString() {
+        return "OrderItem{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", count=" + count +
+                ", price=" + price +
+                ", totalPrice=" + getTotalPrice() +
+                ", orderId='" + orderId + '\'' +
+                '}';
+    }
 }

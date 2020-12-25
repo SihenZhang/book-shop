@@ -86,7 +86,7 @@ usernameValidation = function () {
     let validation = $username.validation(usernameValidator)
     if (validation) {
         const username = $username.val()
-        $.getJSON(location.origin + '/bookshop/userServlet', { action: 'ajaxUsernameExists', username: username })
+        $.getJSON(location.origin + '/book-shop/userServlet', { action: 'ajaxUsernameExists', username: username })
             .done(function (data) {
                 validation = !data.usernameExists
                 if (!validation) {

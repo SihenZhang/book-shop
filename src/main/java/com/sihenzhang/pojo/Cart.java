@@ -1,17 +1,15 @@
 package com.sihenzhang.pojo;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-@EqualsAndHashCode
+@Data
 @NoArgsConstructor
 public class Cart {
-    @Getter
     private final Map<Long, CartItem> items = new LinkedHashMap<>();
 
     public Integer getTotalCount() {

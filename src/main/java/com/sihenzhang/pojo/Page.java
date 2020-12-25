@@ -87,4 +87,16 @@ public class Page<T> {
         }
         return pages;
     }
+
+    @Override
+    public String toString() {
+        return "Page{" +
+                "url='" + url + '\'' +
+                ", records=" + records +
+                ", total=" + total +
+                ", size=" + size +
+                ", current=" + current +
+                ", pages=" + getPages() +
+                '}';
+    }
 }
