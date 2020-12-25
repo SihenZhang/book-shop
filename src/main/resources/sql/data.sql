@@ -1,0 +1,22 @@
+INSERT INTO `t_user`(`username`,`password`,`email`) VALUES ('admin','$2a$10$zOb/9nsYXr.C8k7qLgZayO.7ZnReJxd89zmCVydYROKJgE2zccP8O','admin@sihenzhang.com');
+
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('Effective Java中文版（原书第3版）','约书亚·布洛克（Joshua Bloch）',87.3,127,43,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('Java核心技术 卷I 基础知识（原书第11版）','凯·S.霍斯特曼（Cay S.Horstmann）',109.3,95,25,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('C++ Primer Plus 第6版 中文版','史蒂芬·普拉达（Stephen Prata）',59,97,52,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('Python编程 从入门到实践 第2版','埃里克·马瑟斯（Eric Matthes）',70.2,284,92,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('图解HTTP','上野·宣',36.5,94,35,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('深入理解计算机系统（原书第3版）','兰德尔 E.布莱恩特（Randal E.·Bryant）',106.7,56,23,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('深度学习','伊恩·古德费洛（Ian Goodfellow）',130.90,125,535,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('算法图解','巴尔加瓦（Aditya Bhargava）',36.5,112,36,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('JavaScript高级程序设计 第4版','马特·弗里斯比（Matt Frisbie）',100.5,99,27,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('Cocos2d-x实战：C++卷（第2版）','关东升',84.2,8,15,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('C程序设计（第五版）','谭浩强',38.1,62,74,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('MySQL必知必会','Ben Forta',36.5,148,82,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('设计模式：可复用面向对象软件的基础（典藏版）','埃里克·伽玛（Erich Gamma）',57.9,24,18,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('Spring Cloud Alibaba微服务原理与实战','谭锋（Mic）',83.6,130,20,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('算法导论（原书第3版）','Thomas H.Cormen',93.9,72,18,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('数据结构与算法分析 C语言描述（原书第2版）典藏版','马克·艾伦·维斯（Mark Allen Weiss）',57.9,57,13,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('Spring Boot实战派','龙中华',85.9,130,81,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('计算机网络：自顶向下方法(原书第7版)','詹姆斯·F.库洛斯（James F.Kurose）',65.3,32,81,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('重构 改善既有代码的设计（第2版 平装版）','马丁·福勒（Martin Fowler）',73.7,36,10,'static/upload/default.png');
+INSERT INTO `t_book`(`name`,`author`,`price`,`sales`,`stock`,`img_path`) VALUES ('人月神话（40周年中文纪念版）','小弗雷德里克·布鲁克斯（Frederick P.Brooks，Jr.）',74.8,35,70,'static/upload/default.png');

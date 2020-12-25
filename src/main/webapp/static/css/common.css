@@ -1,0 +1,114 @@
+.anticon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.text-red,
+.text-important {
+    color: #dc3545;
+}
+
+.text-important {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-icon .anticon {
+    margin-right: 0.15rem;
+}
+
+.badge.badge-md {
+    font-size: 95%;
+}
+
+#logo a {
+    display: block;
+    width: 170px;
+    height: 60px;
+    background: url("../img/logo.png") no-repeat 0 0;
+    font-size: 0;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+#shortcut {
+    height: 2rem;
+    line-height: 2rem;
+    background-color: #dee2e6;
+}
+
+#shortcut .nav-item.spacer {
+    color: #ced4da;
+}
+
+#shopping-cart {
+    position: relative;
+    width: 9rem;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 1.5rem;
+    background-color: #f8f9fa;
+}
+
+#shopping-cart:hover {
+    border-color: #dc3545;
+}
+
+#shopping-cart .anticon-shopping-cart-outlined {
+    position: absolute;
+    top: 50%;
+    right: 1.6rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    transform: translateY(-50%);
+}
+
+#shopping-cart .badge {
+    position: absolute;
+    top: 1px;
+    right: 1.8rem;
+    transform: translateX(90%);
+}
+
+#pagination {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto 1.5rem;
+}
+
+#pagination #inputPageNum {
+    max-width: 3rem;
+}
+
+.modal-body .anticon {
+    position: absolute;
+    top: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translateY(-50%);
+}
+
+.modal-body .anticon+p {
+    margin-bottom: 0;
+    padding-left: 2.5rem;
+    padding-right: .5rem;
+}
+
+.table .operation {
+    width: 165px;
+}
