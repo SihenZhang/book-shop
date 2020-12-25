@@ -82,7 +82,7 @@ public class Page<T> {
             return 1L;
         }
         long pages = (this.getTotal() + 1) / this.getSize();
-        if (this.getTotal() % this.getSize() != 0L) {
+        if ((this.getTotal() + 1) % this.getSize() != 0L) {
             pages++;
         }
         return pages;

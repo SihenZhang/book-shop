@@ -19,7 +19,7 @@
 	<%@ include file="../common/footer.jsp" %>
 	<script>
 		setTimeout(function () {
-			location.replace('client/orderServlet?action=list')
+			location.replace('client/orderServlet?action=page')
 		}, 3000)
 	</script>
 </body>
